@@ -1,0 +1,6 @@
+{
+    "rust-analyzer.linkedProjects": [
+        "./Backend/Cargo.toml"
+    ],
+    "html.format.wrapAttributes": "force-aligned"
+}

@@ -1,0 +1,8 @@
+file = "../Website/dist/index.html"
+dir = "../Website/dist/"
+port = 8000 
+
+username = "admin"
+password = "admin"
+host = "localhost"
+database = "QR-Generator"
