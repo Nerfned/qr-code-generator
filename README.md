@@ -45,7 +45,7 @@ Node.js is only required if you want to make changes to the frontend. If you jus
 
 5. You can now access the application at:
 
-   `http://localhost:<YourSetPort>`
+   `http://localhost:8000`
 
 ## Notes
 
