@@ -64,7 +64,7 @@ This was one of my first full-stack projects and is **not production-ready**. Wh
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/yourname/qrcode-generator.git
+   git clone https://github.com/Nerfned/qrcode-generator.git
    cd qrcode-generator
    ```
 
