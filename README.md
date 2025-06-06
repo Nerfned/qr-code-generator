@@ -41,11 +41,11 @@ Node.js is only required if you want to make changes to the frontend. If you jus
 
 4. Start the backend:
 
-   cargo run
+   `cargo run`
 
 5. You can now access the application at:
 
-   http://localhost:<YourSetPort>
+   `http://localhost:<YourSetPort>`
 
 ## Notes
 
