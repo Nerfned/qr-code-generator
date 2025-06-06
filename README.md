@@ -1,113 +1,52 @@
-
 # QR Code Generator
 
-A simple full-stack QR Code Generator built with **Rust (Axum)** on the backend and **Vue.js** on the frontend.
+This project was originally created as a way to learn Rust and Vue.js. It started as a personal learning project and was never intended to be a finished or production-ready application.
 
-> ⚠️ This project is no longer actively maintained. It was originally created as a personal learning exercise to explore Rust and Vue.js.
+The project has since been paused. There are many things that would need to be improved or restructured—both in the code and in how everything is organized.
 
----
+Some examples:
+- Variable and function names are often not very meaningful.
+- The structure of the project needs a lot of work. It's not always clear where to find things.
+- The login and session system is not secure enough for anything beyond local use.
+- Error handling is almost completely missing.
+- No tests have been written.
+- The image embedding feature works, but the images are too small on the QR code and would need adjustment.
 
-## 🚧 Project Status
+That said, a few core features already work reliably.
 
-This was one of my first full-stack projects and is **not production-ready**. While many core features work as intended, the codebase has several beginner-level design issues that would need to be improved in a future rewrite.
+## Currently working features
 
----
+- Generate QR codes with custom colors, patterns, and optional embedded images
+- Download generated QR codes
+- User registration, login, and profile editing
+- Save and edit previously created QR codes
+- Light and dark mode in the frontend
 
-## ✨ Features
+## Requirements
 
-- ✅ Generate QR codes with:
-  - Custom colors
-  - Optional logo/image overlays
-  - Optional background patterns
-- ✅ User registration and login
-- ✅ Save and manage generated QR codes per user
-- ✅ Edit existing QR codes
-- ✅ Toggle between light and dark mode
-- ✅ Download QR codes as SVG
+To run the QR Code Generator, you’ll need the following installed:
 
----
+- Rust
+- PostgreSQL
 
-## ❌ Known Issues / Missing Features
+Node.js is only required if you want to make changes to the frontend. If you just want to run the app as-is, it's not necessary.
 
-- ❌ **Authentication/session handling is not secure**
-  - Sessions are not implemented safely for non-localhost deployments.
-- ❌ **Error handling is minimal**
-  - Many operations do not return meaningful error messages.
-- ❌ **No tests written**
-  - Neither unit nor integration tests exist.
-- ❌ **Image/logo overlay is too small**
-  - Logos placed on the QR codes are not scaled well.
-- ❌ **Code structure needs heavy refactoring**
-  - Variable/function naming, file organization, and logic separation are not well thought-out.
+## Setup
 
----
+1. Install Rust if you don’t have it already: https://www.rust-lang.org/tools/install
 
-## 🛠 Planned (but not implemented)
+2. Install PostgreSQL and make sure you have a user that can access the database.
 
-- Refactoring project layout and improving maintainability
-- Rewriting authentication with JWT or secure sessions
-- Adding proper error responses and logging
-- Writing tests
-- Better frontend UX (image handling, previews, QR customization)
+3. Change the `config.toml` file in the project root with your Information.
 
----
+4. Start the backend:
 
-## 🧪 Requirements
-
-- [Rust](https://www.rust-lang.org/tools/install)
-- [PostgreSQL](https://www.postgresql.org/download/) (make sure the database server is running)
-
----
-
-## ⚙️ Setup Instructions
-
-1. **Clone the repository**
-
-   ```bash
-   git clone https://github.com/Nerfned/qrcode-generator.git
-   cd qrcode-generator
-   ```
-
-2. **Edit the configuration file**
-
-   Update `config.toml` to match your local PostgreSQL credentials and desired server port.
-
-   Example:
-   ```toml
-   port = 3000
-   dir = "frontend/dist"
-   file = "index.html"
-
-   username = "postgres"
-   password = "yourpassword"
-   host = "localhost"
-   database = "qrcode"
-   ```
-
-3. **Run the backend**
-
-   ```bash
    cargo run
-   ```
 
-4. The server should now be available at:
+5. You can now access the application at:
 
-   ```
-   http://localhost:<PORT>
-   ```
+   http://localhost:<YourSetPort>
 
-   Replace `<PORT>` with the value from your `config.toml`.
+## Notes
 
----
-
-## 🧩 File Structure Notes
-
-- Backend is written in Rust using `axum` and `sqlx`.
-- Frontend is located in the `frontend` directory using Vue.js + Vite.
-- Assets such as logos, buttons, and styles are under `src/assets`.
-
----
-
-## 📌 Final Words
-
-This project was built as a learning exercise in Rust and Vue.js. While it is functional in many ways, it reflects a beginner-level understanding at the time and has **significant room for improvement**. However, it also holds **great potential** if extended with the knowledge I’ve gained since then.
+This is clearly a beginner project. Since building it, I’ve learned a lot and would approach many parts of it differently now. It’s not perfect, but it’s a solid starting point for further development or learning.
